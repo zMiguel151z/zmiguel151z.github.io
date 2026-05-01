@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Célula Procarionte</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        /*Montserrat e Poppins*/
+
+        * {
+            transition: all 0.2s;
+        }
+
+        body {
+            width: 80%;
+            margin: auto;
+            margin-bottom: 20px;
+            font-family: Arial, sans-serif;
+            background: #0b1f2a;
+            color: #fff;
+        }
+
+        h1 {
+            font-family: "Montserrat";
+            text-align: center;
+            color: yellow;
+        }
+
+        h3 {
+            font-family: "Poppins";
+            text-align: center;
+            color: #24bedec0;
+        }
+
+        /* IMAGEM TOPO */
+        .header img {
+            width: 70%;
+            margin: auto;
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        /* ABAS */
+        .tabs {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        /* BOTÕES */
+        .tab-btn {
+            background: #d4a017;
+            border: none;
+            height: 40px;
+            width: 100%;
+            padding: 0px 15px;
+            cursor: pointer;
+            text-align: left;
+            font-family: "Montserrat";
+            font-weight: bold;
+            color: #000;
+            border-radius: 8px 8px 0 0;
+            transition: 0.3s;
+
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .tab-btn:hover {
+            background: #f1c232;
+        }
+
+        /* CONTEÚDO */
+        .tab-content {
+            height: 40px;
+            overflow-y: hidden;
+            background: #123447;
+            border-radius: 10px;
+            font-family: "Poppins";
+            scrollbar-width: none;
+        }
+
+        p {
+            padding: 5px 15px;
+        }
+
+        /* ATIVO */
+        .tab-content.active {
+            height: 110px;
+            overflow-y: auto;
+            /* max-width: 300px;
+            overflow-y: auto; */
+        }
+
+        .geral.active {
+            height: 130px;
+        }
+
+        .arrow {
+            font-family: 'Courier';
+            transform: rotate(90deg);
+            position: absolute;
+            right: 20px;
+        }
+
+        .tab-content.active .arrow {
+            transform: rotate(-90deg);
+        }
+
+        /* .arrow {
+            transform: rotate(-90deg);
+        } */
+
+        @media screen and (max-width: 768px) {
+            body {
+                width: 90%;
+                max-width: 100%;
+                overflow-x: hidden;
+            }
+
+            .header img {
+                width: 100%;
+            }
+
+            .tab-content.active {
+                height: 130px;
+                overflow-y: auto;
+            }
+
+            .geral.active {
+                height: 180px;
+            }
+
+            .capsula.active {
+                height: 150px;
+            }
+
+            .flagelo.active {
+                height: 110px;
+            }
+        }
+
+        @media (max-width: 768px) and (orientation: landscape) {
+            .header img {
+                width: 80%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>BIOLOGIA</h1>
+
+    <h3>Célula procarionte</h3>
+
+    <!-- IMAGEM -->
+    <div class="header">
+        <img src="Imagens/celula.png" alt="Célula Procarionte">
+    </div>
+
+    <div class="container">
+        <div class="tabs">
+            <div class="tab-content geral">
+                <button class="tab-btn">O que é célula procarionte <span class="arrow">></span></button>
+
+                <p>São células simples que não possuem núcleo definido. O DNA fica disperso no citoplasma. <br> São
+                    típicas de bactérias e arqueias.</p>
+            </div>
+
+            <div class="tab-content capsula">
+                <button class="tab-btn">Cápsula <span class="arrow">></span></button>
+
+                <p>Camada externa que protege a célula contra desidratação e ataque do sistema imunológico.</p>
+            </div>
+
+            <div class="tab-content">
+                <button class="tab-btn">Parede Celular <span class="arrow">></span></button>
+
+                <p>Estrutura rígida que dá forma e proteção à célula.</p>
+            </div>
+
+            <div class="tab-content">
+                <button class="tab-btn">Membrana Plasmática <span class="arrow">></span></button>
+
+                <p>Controla a entrada e saída de substâncias da célula.</p>
+            </div>
+
+            <div class="tab-content">
+                <button class="tab-btn">Citoplasma <span class="arrow">></span></button>
+
+                <p>Região interna onde ocorrem as reações químicas da célula.</p>
+            </div>
+
+            <div class="tab-content">
+                <button class="tab-btn">Ribossomos <span class="arrow">></span></button>
+
+                <p>Responsáveis pela produção de proteínas.</p>
+            </div>
+
+            <div class="tab-content">
+                <button class="tab-btn">Nucleoide <span class="arrow">></span></button>
+
+                <p>Região onde fica o DNA da célula, sem membrana envolvendo.</p>
+            </div>
+
+            <div class="tab-content">
+                <button class="tab-btn">Pili <span class="arrow">></span></button>
+
+                <p>Estruturas que ajudam na fixação e troca de material genético.</p>
+            </div>
+
+            <div class="tab-content flagelo">
+                <button class="tab-btn">Flagelo <span class="arrow">></span></button>
+
+                <p>Responsável pela locomoção da célula.</p>
+            </div>
+
+            <!-- <button class="tab-btn" onclick="abrirTab('capsula')">Cápsula <span class="arrow">></span></button>
+            <div id="capsula" class="tab-content">
+                Camada externa que protege a célula contra desidratação e ataque do sistema imunológico.
+            </div>
+
+            <button class="tab-btn" onclick="abrirTab('parede')">Parede Celular <span class="arrow">></span></button>
+            <div id="parede" class="tab-content">
+                Estrutura rígida que dá forma e proteção à célula.
+            </div>
+
+            <button class="tab-btn" onclick="abrirTab('membrana')">Membrana Plásmica <span
+                    class="arrow">></span></button>
+            <div id="membrana" class="tab-content">
+                Controla a entrada e saída de substâncias da célula.
+            </div>
+
+            <button class="tab-btn" onclick="abrirTab('citoplasma')">Citoplasma <span class="arrow">></span></button>
+            <div id="citoplasma" class="tab-content">
+                Região interna onde ocorrem as reações químicas da célula.
+            </div>
+
+            <button class="tab-btn" onclick="abrirTab('ribossomos')">Ribossomos <span class="arrow">></span></button>
+            <div id="ribossomos" class="tab-content">
+                Responsáveis pela produção de proteínas.
+            </div>
+
+            <button class="tab-btn" onclick="abrirTab('nucleoide')">Nucleoide <span class="arrow">></span></button>
+            <div id="nucleoide" class="tab-content">
+                Região onde fica o DNA da célula, sem membrana envolvendo.
+            </div>
+
+            <button class="tab-btn" onclick="abrirTab('pili')">Pili <span class="arrow">></span></button>
+            <div id="pili" class="tab-content">
+                Estruturas que ajudam na fixação e troca de material genético.
+            </div>
+
+            <button class="tab-btn" onclick="abrirTab('flagelo')">Flagelo <span class="arrow">></span></button>
+            <div id="flagelo" class="tab-content">
+                Responsável pela locomoção da célula.
+            </div> -->
+
+        </div>
+
+    </div>
+
+    <script>
+        const botoes = document.querySelectorAll(".tab-btn");
+        const conteudos = document.querySelectorAll('.tab-content');
+        let isAberto = false;
+
+        botoes.forEach((btn) => {
+            btn.addEventListener("click", function () {
+                const classe = this.parentElement;
+
+                if (!classe.classList.contains("active")) {
+                    classe.classList.add("active");
+                } else {
+                    classe.classList.remove("active");
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
