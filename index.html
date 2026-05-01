@@ -59,6 +59,7 @@
             padding: 0px 15px;
             cursor: pointer;
             text-align: left;
+            font-size: 18px;
             font-family: "Montserrat";
             font-weight: bold;
             color: #000;
@@ -101,7 +102,8 @@
         }
 
         .arrow {
-            font-family: 'Courier';
+            font-family: monospace;
+            font-weight: 900;
             transform: rotate(90deg);
             position: absolute;
             right: 20px;
@@ -110,10 +112,6 @@
         .tab-content.active .arrow {
             transform: rotate(-90deg);
         }
-
-        /* .arrow {
-            transform: rotate(-90deg);
-        } */
 
         @media screen and (max-width: 768px) {
             body {
@@ -124,6 +122,10 @@
 
             .header img {
                 width: 100%;
+            }
+
+            .tab-btn {
+                font-size: 16.5px;
             }
 
             .tab-content.active {
@@ -141,6 +143,10 @@
 
             .flagelo.active {
                 height: 110px;
+            }
+
+            .arrow {
+                right: 10px;
             }
         }
 
@@ -161,7 +167,7 @@
 
     <!-- IMAGEM -->
     <div class="header">
-        <img src="Imagens/celula.png" alt="Célula Procarionte">
+        <img src="imagens/celula.png" alt="Célula Procarionte">
     </div>
 
     <div class="container">
