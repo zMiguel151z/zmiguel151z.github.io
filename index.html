@@ -37,7 +37,7 @@
 
         /* IMAGEM TOPO */
         .header img {
-            width: 70%;
+            width: 60%;
             margin: auto;
             display: block;
             margin-bottom: 20px;
@@ -133,16 +133,22 @@
                 overflow-y: auto;
             }
 
-            .geral.active {
-                height: 180px;
-            }
-
             .capsula.active {
                 height: 150px;
             }
 
+            .membrana-plasmatica.active {
+                height: 155px;
+            }
+
+            .geral.active,
+            .citoplasma.active,
+            .fimbrias.active {
+                height: 180px;
+            }
+
             .flagelo.active {
-                height: 110px;
+                height: 130px;
             }
 
             .arrow {
@@ -167,7 +173,8 @@
 
     <!-- IMAGEM -->
     <div class="header">
-        <img src="imagens/celula.png" alt="Célula Procarionte">
+        <!-- <img src="imagens/celula.png" alt="Célula Procarionte"> -->
+        <img src="imagens/celula.webp" alt="Célula Procarionte">
     </div>
 
     <div class="container">
@@ -191,22 +198,22 @@
                 <p>Estrutura rígida que dá forma e proteção à célula.</p>
             </div>
 
-            <div class="tab-content">
+            <div class="tab-content membrana-plasmatica">
                 <button class="tab-btn">Membrana Plasmática <span class="arrow">></span></button>
 
-                <p>Controla a entrada e saída de substâncias da célula.</p>
+                <p>Envolve a célula, controla a entrada e saída de substâncias da célula e separa a célula do ambiente externo.</p>
             </div>
 
-            <div class="tab-content">
+            <div class="tab-content citoplasma">
                 <button class="tab-btn">Citoplasma <span class="arrow">></span></button>
 
-                <p>Região interna onde ocorrem as reações químicas da célula.</p>
+                <p>Região interna que contém o citosol e partículas como ribossomos, onde ocorrem as reações químicas da célula.</p>
             </div>
 
             <div class="tab-content">
                 <button class="tab-btn">Ribossomos <span class="arrow">></span></button>
 
-                <p>Responsáveis pela produção de proteínas.</p>
+                <p>Organelas responsáveis pela produção de proteínas.</p>
             </div>
 
             <div class="tab-content">
@@ -215,16 +222,22 @@
                 <p>Região onde fica o DNA da célula, sem membrana envolvendo.</p>
             </div>
 
-            <div class="tab-content">
-                <button class="tab-btn">Pili <span class="arrow">></span></button>
+            <div class="tab-content fimbrias">
+                <button class="tab-btn">Fímbrias <span class="arrow">></span></button>
 
-                <p>Estruturas que ajudam na fixação e troca de material genético.</p>
+                <p>Projeções da superfície de certas bactérias. Semelhantes a fios, ajudam a bactéria a aderir a outras bactérias, células e superfícies.</p>
+            </div>
+
+            <div class="tab-content">
+                <button class="tab-btn">Plasmídeos <span class="arrow">></span></button>
+
+                <p>Fragmentos de DNA que não fazem parte do cromossomo principal.</p>
             </div>
 
             <div class="tab-content flagelo">
                 <button class="tab-btn">Flagelo <span class="arrow">></span></button>
 
-                <p>Responsável pela locomoção da célula.</p>
+                <p>Responsável pela locomoção e impulsão da célula.</p>
             </div>
 
             <!-- <button class="tab-btn" onclick="abrirTab('capsula')">Cápsula <span class="arrow">></span></button>
